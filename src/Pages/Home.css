@@ -1,0 +1,293 @@
+
+/* slide */
+
+.slide{
+   padding-left: 18%;
+
+}
+/* .slide h1{
+    font-size: 40px;
+} */
+
+.slide p {
+  font-size: 1.2vw; 
+  line-height: 1.5; 
+  margin: 1.5% 0; 
+}
+
+@media (max-width: 768px) {
+  .slide p {
+    font-size: 4vw; 
+  }
+}
+
+
+  /*team container*/
+
+  .team-container {
+    position: relative;
+    display: inline-block; 
+    padding-left: 1rem; 
+   
+  }
+  
+  .team-container img {
+    width: 80%; 
+    height: auto; 
+    max-width: 85%;
+    
+  }
+  
+  .team-container h2 {
+    position: absolute;
+  top: 40%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+   /* our obectives */
+.objectives {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 0 1rem; 
+}
+
+.objectives .col-4 {
+  flex: 1;
+  margin: 1rem; 
+  padding: 18px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  max-width: 350px;
+}
+
+.objectives p {
+  margin: 1rem;
+}
+
+.objectives h2 {
+  font-family: 'verdana';
+}
+
+@media (max-width: 768px) {
+  .objectives {
+    padding: 0.5rem; 
+  }
+}
+   
+  /* melo service */
+.melo-service {
+  position: relative;
+  display: inline-block;
+  padding-left: 1rem; 
+}
+
+.melo-service img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+}
+
+.melo-service h2 {
+  position: absolute;
+  top: 10%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+   
+
+
+   /*teamdata*/
+
+   .teamdata{
+    transform: scale(1.00); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+   
+   }
+    
+   .teamdata:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+  /* section */
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.section p {
+  margin: 1rem;
+}
+
+.section h2 {
+  font-size: 2vw; 
+  padding-left: 1rem;
+  font-family: 'Verdana';
+}
+
+.col-4 {
+  flex-basis: 30%; 
+  padding: 12px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  transition: transform 0.3s; 
+  cursor: pointer;
+}
+
+.col-4:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .section {
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+ 
+    .section h2 {
+      font-size: 4vw;
+    }
+  }
+
+  .col-4 {
+    flex-basis: 100%;
+    margin-bottom: 1rem; 
+  }
+}
+  
+
+
+  /*service*/
+  .service {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+  
+  }
+  
+  /* .service p {
+    line-height: 1.5;
+    width: '80%'
+  } */
+  
+  @media screen and (max-width: 768px) {
+    .service p {
+      font-size: 3.7vw; 
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .service{
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+
+   /*services*/
+  
+   .Services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2rem; /* Adjust padding for responsiveness */
+    margin: auto;
+  }
+  
+  .col-5 {
+    flex: 0 0 calc(26.25% - 20px);
+    margin: 15px;
+    background-color: #f2f2f2;
+    transition: transform 0.3s;
+    cursor: pointer;
+    min-width: 300px; /* Set a minimum width for each service card */
+  }
+  
+  .col-5 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .col-5 img:hover {
+    transform: scale(1.05);
+  }
+  
+  .col-5:hover h4,
+  .col-5:hover p {
+    transform: scale(1.05);
+  }
+  
+   /* patner */
+.patner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 1.5rem; 
+}
+
+.patner > div {
+  flex: 1;
+  margin: 0 1rem; 
+}
+
+.patner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*melo*/
+
+.melo {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .melo {
+      font-size: 14px;
+      padding: 5px;
+  }
+}
+   
+  
+  
+  
+  
+  
+   

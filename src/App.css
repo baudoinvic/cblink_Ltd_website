@@ -1,0 +1,81 @@
+
+*{
+margin:0;
+padding:0;
+transition:all 0.5s ease-in-out;
+}
+
+.inner-list {
+  display: none;
+}
+
+.link-holder:hover .inner-list {
+  display: flex;
+}
+.about-link:hover .chevron1 {
+  transform: rotate(180deg);
+}
+
+.services-link:hover .chevron2 {
+  transform: rotate(180deg);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 7%;
+}
+
+.socialMedias {
+  display: none;
+}
+.profileCard:hover .socialMedias {
+  display: flex;
+  transform: all 0.5s ease;
+}
+
+button:hover {
+  animation: ring 0.5s ease;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.signup-background {
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-attachement:fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.marksCard{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.Home{
+  display: flex;
+  transform: all 0.5s ease;
+}
+
+@media screen and (max-width: 480px){
+  
+}
+
