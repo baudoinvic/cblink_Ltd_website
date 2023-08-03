@@ -14,3 +14,5 @@
 // }
 
 // export default Skill;
+
+export {}

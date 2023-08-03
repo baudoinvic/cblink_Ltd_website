@@ -208,7 +208,7 @@ const Home = () => {
          </br>
                 
 
-        <div className='team-container'>
+        <div className='melo-service'>
          <img
         src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
         alt='Background Image'
@@ -217,7 +217,7 @@ const Home = () => {
        <h2 style={{
         fontFamily: 'verdana',
          fontSize: '18px',
-        top: '2rem',
+        // top: '2rem',
     }}>Our Services</h2>
      
        
@@ -243,13 +243,13 @@ const Home = () => {
   <div className='col-5'>
     <img src='https://cdn.dribbble.com/userupload/4717755/file/original-3ef529578336497a06a9203f8fca5f05.png?compress=1&resize=400x300&vertical=center' alt="Mobile Development" />
     <h4><b>Mobile Development</b></h4>
-     <p>great way for designing mobile apps and implementing for our customers</p>
+     <p>We are proud to offer our clients fully customisable mobile apps</p>
   </div>
 
   <div className='col-5'>
     <img src='https://cdn.dribbble.com/users/1615584/screenshots/17075020/media/85d7a2dd39648cf1262f093d03452bb1.jpg?resize=400x0' alt="UI/UX Design" />
     <h4><b>UI/UX Design</b></h4>
-     <p>we are on top level for designing softwares and web apps</p>
+     <p>We take pride in our craft. Our Design team's deep expertise in product.</p>
   </div>
 
   {/* Bottom Row */}
@@ -262,13 +262,13 @@ const Home = () => {
   <div className='col-5'>
     <img src='https://img.freepik.com/free-vector/cloud-services-isometric-composition-with-big-cloud-computing-infrastructure-elements-connected-with-dashed-lines-vector-illustration_1284-30495.jpg' alt="IT Support" />
     <h4><b>IT Support</b></h4>
-     <p>we support technical management for achieving the target </p>
+     <p>we support technical management for achieving the target and businesses </p>
   </div>
 
   <div className='col-5'>
     <img src="https://www.creationtech.com/wp-content/uploads/2018/05/IoT-AdobeStock_140202697-1024x768-1-1024x768.jpg" />
     <h4><b>Software|Hardware Maintenance</b></h4>
-     <p>we maintain computers for a better perfomance and maintain also softwares</p>
+     <p>Optimizing software performance and resource management. also Data backup and disaster recovery planning</p>
   </div>
 </div>
 

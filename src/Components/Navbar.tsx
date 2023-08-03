@@ -64,7 +64,7 @@ const Navbar = (props: any) => {
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Network Installation</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Hardware and Software Maintenance</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Academic and Professional Internship</Link></li>
+                {/* <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Academic and Professional Internship</Link></li> */}
               </ul>
             </li>
             <li className=''><Link to={'/contact'} className='cursor-pointer'>REACH US</Link></li>
@@ -74,7 +74,7 @@ const Navbar = (props: any) => {
             <a href="https://" target={'_blank'}><BsTwitter className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
             <a href="https://" target={'_blank'}><BsFacebook className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
             <a href="https://" target={'_blank'}><BsInstagram className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
-            <a href="https://" target={'_blank'}><BsLinkedin className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
+            <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target={'_blank'}><BsLinkedin className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
           </div>
         </div>
 

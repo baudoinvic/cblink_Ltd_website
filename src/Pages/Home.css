@@ -39,7 +39,7 @@
   }
   
   .team-container h2 {
-    position: absolute;
+   position: absolute;
   top: 40%;
   left: 43%;
   transform: translate(-50%, -50%);
@@ -50,7 +50,12 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   }
-
+   
+  @media (max-width: 768px) {
+    .team-container h2 {
+      font-size: 3.7vw; 
+    }
+  }
 
 
    /* our obectives */
@@ -94,7 +99,7 @@
 
 .melo-service img {
   width: 80%;
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 
@@ -110,7 +115,12 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
-   
+@media screen and (max-width: 768px) {
+ 
+  .melo-service h2 {
+    top: 3%
+  }
+}
 
 
    /*teamdata*/
@@ -223,6 +233,8 @@
     padding: 0 2rem; /* Adjust padding for responsiveness */
     margin: auto;
   }
+
+  
   
   .col-5 {
     flex: 0 0 calc(26.25% - 20px);
@@ -237,6 +249,7 @@
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    border-radius: 20px;
   }
   
   .col-5 img:hover {
@@ -246,6 +259,12 @@
   .col-5:hover h4,
   .col-5:hover p {
     transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 768px){
+    .Services h2{
+     top: 5%;
+    }
   }
   
    /* patner */
