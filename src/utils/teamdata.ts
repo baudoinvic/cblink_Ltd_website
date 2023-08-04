@@ -64,13 +64,13 @@ const teamData: Array<TeamMemberObject> = [
             twitter: "",
         }
     }, {
-        profileImage: "https://www.linkedin.com/dms/D4D06AQFhxzT9tZDNZQ/messaging-attachmentFile/0/1690454912143?m=AQKAl1fRFIRYnAAAAYmW-IqGeTDl5bgZZd3TKzUlFfjn4h-ORQNWrLBTzw&ne=1&v=beta&t=oclnuLJrfZYGxg4ffEXHP-RT3IgiunEwWd1e70vgnHo",
+        profileImage: "https://media.licdn.com/dms/image/D4D03AQEZjKMsUxC5wg/profile-displayphoto-shrink_200_200/0/1691146125560?e=1696464000&v=beta&t=U2Tv5bB3gKFQ2HSDkBQjLJIMwqmirTa4fmuepGgGMNc",
         name: 'Benoit',
         role: 'Project Manager',
         description: "",
         socialMedias: {
             instagram: "",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/beno%C3%AEt-nubahumpatse-65b136179/",
             twitter: "",
         }
     },
