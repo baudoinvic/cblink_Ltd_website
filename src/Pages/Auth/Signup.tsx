@@ -17,7 +17,7 @@ const Signup = () => {
             tinNumber: undefined,
             telephone: undefined,
             email: '',
-            logoImageStr: 'https://res.cloudinary.com/precieux/image/upload/v1664001919/download_fnln5v.png',
+            logoImageStr: 'https://res.cloudinary.com//image/upload/v1664001919/download_fnln5v.png',
             managerName: '',
             managerTelephone: undefined,
             managerEmail: '',
@@ -114,17 +114,17 @@ const Signup = () => {
                                 <div className='px-4 mmsm:px-8 mb-24 mmsm:mb-32 w-full flex flex-col items-center justify-center'>
                                     <div className='w-full flex my-1 flex-row items-center justify-between py-2 text-lg text-black'>
                                         <span className={`bg-cblink/10 ${formData.logoImageStr ? 'font-semibold text-black' : 'text-gray-500 bg-cblink/10'} status font-poppins p-2.5 rounded  w-9/12`}>{
-                                            formData.logoImageStr === 'https://res.cloudinary.com/precieux/image/upload/v1664001919/download_fnln5v.png' ?
+                                            formData.logoImageStr === 'https://res.cloudinary.com//image/upload/v1664001919/download_fnln5v.png' ?
                                                 'No file was uploaded'
                                                 :
                                                 'Logo was uploaded ✅'
                                         }
                                         </span>
                                         {
-                                            formData.logoImageStr === 'https://res.cloudinary.com/precieux/image/upload/v1664001919/download_fnln5v.png' ?
+                                            formData.logoImageStr === 'https://res.cloudinary.com//image/upload/v1664001919/download_fnln5v.png' ?
                                                 null
                                                 :
-                                                <span title='Change Logo' className='cursor-pointer' onClick={() => setFormData({ ...formData, logoImageStr: 'https://res.cloudinary.com/precieux/image/upload/v1664001919/download_fnln5v.png' })}><MdOutlineCancel color='#160370' size={30} /></span>
+                                                <span title='Change Logo' className='cursor-pointer' onClick={() => setFormData({ ...formData, logoImageStr: 'https://res.cloudinary.com//image/upload/v1664001919/download_fnln5v.png' })}><MdOutlineCancel color='#160370' size={30} /></span>
                                         }
                                         <label htmlFor="logoImageUploadInput" id='logoImageUploadLabel' className='w-12 h-12 cursor-pointer bg-cblink rounded-full text-white flex items-center justify-center'><IoMdCloudUpload color='white' size={30} /></label>
                                     </div>

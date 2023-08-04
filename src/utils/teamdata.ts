@@ -1,4 +1,8 @@
 import precieux from './../assets/precieux.png';
+import benoit from './../assets/benoit.jpg';
+import phionah from './../assets/phionah.jpg';
+import valantin from './../assets/valantin.jpeg';
+
 
 interface TeamMemberObject {
     profileImage: any,
@@ -43,7 +47,7 @@ const teamData: Array<TeamMemberObject> = [
             twitter: "https://twitter.com/Pre_mugisha",
         }
     }, {
-        profileImage: "https://www.linkedin.com/dms/D4D06AQFAN0M84-nRlA/messaging-attachmentFile/0/1690454906129?m=AQJigQSPLOOTBwAAAYmW99pkTPZ2x62c-Npld_Okzkc3SM40j-4EXqk6HQ&ne=1&v=beta&t=rrHEt7Dom85n92hf8fHxF9KYQLAJBwiihQ6SEUGYdB8",
+        profileImage: valantin,
         name: 'Valantin',
         role: 'Developer',
         description: "",
@@ -54,7 +58,7 @@ const teamData: Array<TeamMemberObject> = [
         }
         
     }, {
-        profileImage: "https://www.linkedin.com/dms/D4D06AQF0mQz5N3FO-w/messaging-attachmentFile/0/1690454640905?m=AQKrNrOlnQSB7AAAAYmW8ulTapeguNjVP9gAgDlfdageZKLEfyDXcRUTgA&ne=1&v=beta&t=IjhUuKYICEbq5-k_FrI1OAcs-nv53qsKIEUzH1VK7LM",
+        profileImage: phionah,
         name: 'phionah',
         role: 'Developer',
         description: "",
@@ -64,7 +68,7 @@ const teamData: Array<TeamMemberObject> = [
             twitter: "",
         }
     }, {
-        profileImage: "https://media.licdn.com/dms/image/D4D03AQEZjKMsUxC5wg/profile-displayphoto-shrink_200_200/0/1691146125560?e=1696464000&v=beta&t=U2Tv5bB3gKFQ2HSDkBQjLJIMwqmirTa4fmuepGgGMNc",
+        profileImage: benoit,
         name: 'Benoit',
         role: 'Project Manager',
         description: "",
