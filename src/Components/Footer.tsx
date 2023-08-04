@@ -31,13 +31,15 @@ const Footer = () => {
                     top: '-2rem',
                     position: 'relative',
                     color: '#d9d9d9'}}>_We would like to hear from you. what is your bold idea?</p>
-                <img style={{opacity: '0.5'}} src="/src/assets/logo-head.gif" className="w-32 h-10" alt=""></img>
+                   
+                {/* <img style={{opacity: '0.5'}} src="/src/assets/logo-head.gif" className="w-32 h-10" alt=""></img> */}
                 <div className='my-2 flex flex-col items-start justify-start'
                 
                 style={{
                     color: '#d9d9d9',
-                    fontFamily: 'Times new roman sans serif', fontSize: '13px'
-                    
+                    fontFamily: 'Times new roman sans serif', fontSize: '13px',
+                    top: '-2rem',
+                    position: 'relative',
                     }}>
                     
                     <span className='my-1'>KIGALI, KICUKIRO DISTRICT</span>
@@ -50,7 +52,9 @@ const Footer = () => {
                   style={{
                     
                     color: '#d9d9d9',
-                    fontFamily:'Times New roman san Serif'
+                    fontFamily:'Times New roman san Serif',
+                    position: 'relative',
+                    top: '-2rem'
                     
                     }}>
                      <div style={{ display: 'flex', alignItems: 'center' }}>

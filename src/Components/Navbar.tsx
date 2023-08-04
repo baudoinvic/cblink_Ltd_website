@@ -92,6 +92,7 @@ const Navbar = (props: any) => {
                 <li className='w-3/4 my-2 '><a href={'#meloproducts'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Products</a></li>
               </ul>
             </li>
+             
             <li className='link-holder my-2 relative flex flex-col'>
               <Link onClick={servicesLinkMobile} to={'/'} className={`services-link-mobile font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
               <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list-mobile-2 hidden list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute -right-6 top-6'>

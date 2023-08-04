@@ -16,8 +16,8 @@ const Services = () => {
             textAlign: 'center'
             
              }}>Our services</div>
-
-            <div className='grid w-10/12 grid-cols-2'>
+              <br></br>
+            <div className='grid max-w-10xl w-10/12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 {
                     services.map(service => <Service service={service} />)
                 }
