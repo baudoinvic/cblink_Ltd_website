@@ -1,5 +1,9 @@
 import React from 'react';
-import './Carousel.css'
+import './Carousel.css';
+import { Link } from 'react-router-dom'
+
+
+
 const Carousel = () => {
   return (
     <div className="coner">
@@ -10,9 +14,11 @@ const Carousel = () => {
       focused on management softwares in order to equip businesses with strong
       management tools so that they can grow based on their data reports
       analysis.
+
     </p>
-    <a href="aboutus" className="discover-link">
-      Discover More <span className="arrow">→</span>
+
+    <a href="/auth/signup" className="discover-link">
+      Discover More <span className="arrow">→</span> 
     </a>
   </div>
   );

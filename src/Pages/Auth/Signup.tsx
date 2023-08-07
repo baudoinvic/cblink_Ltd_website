@@ -6,7 +6,7 @@ import { MdDoneAll, MdOutlineCancel } from 'react-icons/md'
 import { useAdmin } from '../../Context/AdminContext'
 import { ToastContainer, toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
-
+import './Signup.css'
 
 const Signup = () => {
     const { newCompany }: any = useAdmin()
@@ -81,31 +81,32 @@ const Signup = () => {
         };
 
     return (
-        <div className='signup-background w-screen h-screen flex items-center justify-center'>
 
+
+       
+        <div className='Signup'>
+            
             <form className='w-full h-full flex items-center justify-center' onSubmit={handleSubmit}>
                 <div className='smm20: sm:w-6/12 md:w-5/12 xl:w-4/12 h-fit relative rounded-xl bg-white flex flex-col items-center justify-center'>
                     <img src={meloLogo} className='w-24 h-24 mt-8' alt="" />
-                    <h2 className='text-black text-3xl font-poppins font-semibold my-8'>Melo Signup</h2>
+                    <h2 className='text-black text-3xl font-poppins font-semibold my-8'>Signup</h2>
+
                     {
                         step === 1 ?
 
                             <div className='px-4 mmsm:px-8 mb-24 mmsm:mb-32 w-full flex flex-col items-center justify-center'>
                                 <div className='w-full flex my-1 flex-col items-start justify-center'>
-                                    <span className={` text-sm font-poppins text-cblink`}>Name</span>
-                                    <input required={true} value={formData.name} onChange={handleChange('name')} placeholder='e.g. Elite Pharmacy' type="text" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
+                                  
+                                    <input required={true} value={formData.name} onChange={handleChange('name')} placeholder='enter your username' type="text" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
+                                </div>
+                                
+                                <div className='w-full flex my-1 flex-col items-start justify-center'>
+                                
+                                    <input required={true} value={formData.telephone} onChange={handleChange('telephone')} placeholder='your phone number' type={"telephone"} className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
                                 </div>
                                 <div className='w-full flex my-1 flex-col items-start justify-center'>
-                                    <span className={` text-sm font-poppins text-cblink`}>TIN Number</span>
-                                    <input required={true} value={formData.tinNumber} onChange={handleChange('tinNumber')} placeholder='' type="number" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
-                                </div>
-                                <div className='w-full flex my-1 flex-col items-start justify-center'>
-                                    <span className={`text-sm font-poppins text-cblink`}>Phone Number</span>
-                                    <input required={true} value={formData.telephone} onChange={handleChange('telephone')} placeholder='+(250) 7** *** ***' type={"telephone"} className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
-                                </div>
-                                <div className='w-full flex my-1 flex-col items-start justify-center'>
-                                    <span className={`text-sm font-poppins text-cblink`}>Email</span>
-                                    <input required={true} value={formData.email} onChange={handleChange('email')} placeholder='eg. elitepharm@gmail.com' type="email" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
+                                  
+                                    <input required={true} value={formData.email} onChange={handleChange('email')} placeholder='your email' type="email" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
                                 </div>
                             </div>
 
@@ -160,13 +161,13 @@ const Signup = () => {
                                 </div>
 
                     }
-                    <div className='py-4 w-full mt-8 scale-75 mmsm:scale-100 bg-inherit flex items-center justify-between mmsm:justify-around rounded-b-lg mmsm:px-4 absolute h-fit left-0 right-0 bottom-0'>
+                    <div className='py-4 w-full mt-8 scale-75 mmsm:scale-100 bg-inherit flex items-center justify-between mmsm:justify-around rounded-b-lg mmsm:px-4 absolute h-fit left-0 right-0 bottom-0' style={{bottom: '30px'}}>
                         <button onClick={() => {
                             step === 1
                                 ?
                                 null :
                                 setStep(step - 1)
-                        }} className={` text-white px-2 mmsm:px-4 py-2 rounded flex items-center justify-center text-xl ${step === 1 ? ' cursor-not-allowed bg-cblink/20' : 'bg-cblink cursor-pointer'} `} disabled={step===1} type='button'>Back <BiSkipNext className='rotate-180 text-3xl ml-3' color='white' /></button>
+                        }} className={` text-white px-2 mmsm:px-4 py-2 rounded flex items-center justify-center text-xl ${step === 1 ? ' cursor-not-allowed bg-cblink/20' : 'bg-cblink cursor-pointer'} `} disabled={step===1} type='button'>Back <BiSkipNext className='rotate-180 text-3xl ml-3' color='white' style={{bottom: '25px'}} /></button>
                         <button onClick={() => {
                             step === 3
                                 ?

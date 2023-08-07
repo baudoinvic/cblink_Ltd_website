@@ -1,0 +1,15 @@
+.Signup {
+ 
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+    display: flex;
+     align-items: center;
+    flex-direction: column;
+     align-items: center;
+  
+    background-size: cover;
+    background-position: center;
+  }
+  .Signup form{
+    height: 590px;
+  }
+ 
