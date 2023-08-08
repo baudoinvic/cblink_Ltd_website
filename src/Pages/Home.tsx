@@ -60,16 +60,22 @@ const Home = () => {
      
       <div id="aboutus">
       <div className='slide'>
-      <div className='team-container'>
+      <div className='team-container' style={{margin: '4.3rem'}}>
       <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg" alt="Background Image"
    
   />
       <h2> WE ARE AN IT COMPANY</h2>
     </div>
-      
-         <p>Here to serve you technology better, mainly focusing on software solutions technologies.</p>
+    
+         <p 
+         style={{
+          marginTop: '-33px',
+          paddingLeft: '1%'
+
+          }}>Here to serve you technology better, mainly focusing on software solutions technologies.</p>
+          
           <div className="" style={{width: '80%'}}>
-        <p style={{margin: '1.5%'}}>Cb-link Ltd is an IT company initiated to provide different software solutions to the
+          <p style={{margin: '1.5%'}}>Cb-link Ltd is an IT company initiated to provide different software solutions to the
             private and public business sectors.With a strong focus on technology-driven advancements We 
             primarily focused on management softwares in order
             to equip businesses withstrong management 
@@ -311,15 +317,18 @@ const Home = () => {
           </div>
         </div>
 
-      
+       <br></br> <br></br>
       <div id='meloproducts' className='w-full px-4 sm10:px-16 py-8 flex flex-col items-center justify-start  bg-[#f5f5f5]'>
-      <div className='team-container'>
+      <div className='team-container' style={{margin: '2.5rem'}}>
         <img
        src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg" alt="Background Image"
       />
+      
   <h2 style={{
    
-    fontFamily: 'Times new roman sans serif'}}> MELO™ PRODUCTS<span className="arrow">→</span></h2>
+    fontFamily: 'Times new roman sans serif'
+    
+    }}> MELO™ PRODUCTS<span className="arrow">→</span></h2>
   </div>
      <div className="melo">
         <p>today in our daily schedules. It can be daunting and difficult to handle, whether you have been

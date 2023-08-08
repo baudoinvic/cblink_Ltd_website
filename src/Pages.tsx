@@ -24,6 +24,7 @@ const Pages = () => {
                 pauseOnHover
                 theme='colored'
             />
+            
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home />}></Route>

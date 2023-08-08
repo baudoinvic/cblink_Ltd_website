@@ -109,10 +109,9 @@ const Signup = () => {
                                     <input required={true} value={formData.email} onChange={handleChange('email')} placeholder='your email' type="email" className='p-2 text-lg bg-cblink/10 font-poppins font-medium text-black placeholder:text-gray-500 placeholder:text-lg placeholder:font-poppins rounded w-full outline-0 border-0 h-12 mb-2' />
                                 </div>
                             </div>
-
                             :
                             step === 2 ?
-                                <div className='px-4 mmsm:px-8 mb-24 mmsm:mb-32 w-full flex flex-col items-center justify-center'>
+                                <div className='px-4 mmsm:px-8 mb-24 mmsm:mb-32 w-3/4 flex flex-col items-center justify-center'>
                                     <div className='w-full flex my-1 flex-row items-center justify-between py-2 text-lg text-black'>
                                         <span className={`bg-cblink/10 ${formData.logoImageStr ? 'font-semibold text-black' : 'text-gray-500 bg-cblink/10'} status font-poppins p-2.5 rounded  w-9/12`}>{
                                             formData.logoImageStr === 'https://res.cloudinary.com//image/upload/v1664001919/download_fnln5v.png' ?

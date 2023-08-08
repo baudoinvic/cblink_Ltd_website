@@ -56,6 +56,7 @@ const Navbar = (props: any) => {
             <li className='link-holder my-2 relative mx-4 flex flex-col'>
               <Link to={'/'} className={`services-link font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' style={{color:'#495d69'}} >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
               <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute top-6'>
+              {/* <li className='w-3/4 my-2 '><a href={'#cb-Services'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Services</a></li> */}
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
