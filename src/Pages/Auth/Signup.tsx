@@ -7,6 +7,9 @@ import { useAdmin } from '../../Context/AdminContext'
 import { ToastContainer, toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 import './Signup.css'
+//  import { Navbar } from 'react-bootstrap'
+import Navbar from '../../Components/Navbar'
+import Footer from '../../Components/Footer'
 
 const Signup = () => {
     const { newCompany }: any = useAdmin()
@@ -85,7 +88,7 @@ const Signup = () => {
 
        
         <div className='Signup'>
-            
+          <Navbar />
             <form className='w-full h-full flex items-center justify-center' onSubmit={handleSubmit}>
                 <div className='smm20: sm:w-6/12 md:w-5/12 xl:w-4/12 h-fit relative rounded-xl bg-white flex flex-col items-center justify-center'>
                     <img src={meloLogo} className='w-24 h-24 mt-8' alt="" />
@@ -189,7 +192,6 @@ const Signup = () => {
                     </div>
                 </div>
             </form>
-
         </div>
     )
 }

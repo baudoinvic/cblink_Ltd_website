@@ -17,7 +17,7 @@ const Carousel = () => {
 
     </p>
 
-    <a href="/auth/signup" className="discover-link">
+    <a href="About" className="discover-link">
       Discover More <span className="arrow">→</span> 
     </a>
   </div>

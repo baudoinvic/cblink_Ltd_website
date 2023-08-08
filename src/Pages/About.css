@@ -2,42 +2,62 @@
     display: flex;
     align-items: center;
     width: 85%;
-    margin-top: 20px;
-    padding-left: 5%;
-  }
+    margin: 20px auto;
+    padding: 0 5%;
+    text-align: center;
+}
 
-  .about-melo img {
+.about-melo img {
     max-width: 34%;
-    margin-left: 100px;
-    margin-top: 20px;
     border-radius: 8%;
-  }
+    margin-right: 20px; 
+}
 
-  .about-melo p {
+.about-melo p {
     flex: 1;
-    margin-top: -10%;
-    margin-left: 13px;
-   
-  }
+    margin: 0; 
+    text-align: left; 
+}
 
+@media (max-width: 768px) {
+    .about-melo{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 85%;
+        margin: 20px auto; 
+        padding: 0 5%; 
+        text-align: center; 
+    }
+    }
+  
+    @media (max-width: 768px) {
+        .about-melo img {
+            max-width: 100%;
+            border-radius: 8%;
+            margin-bottom: 20px;
+        }
+    }
+ 
+    
   /* melo service */
-.melo-service {
+.product {
     position: relative;
     display: inline-block;
     padding-left: 30%; 
     margin-top: 22px;
   }
   
-  .melo-service img {
+  .product img {
     width: 80%;
     max-width: 85%;
     height: auto;
   }
   
-  .melo-service h2 {
+  .product h2 {
     position: absolute;
-     margin-top: 25px;
-    padding-left: 35%;
+     margin-top: -30px;
+    padding-left: 55%;
     transform: translate(-50%, -50%);
     z-index: 1;
     font-size: 4vw; /* Responsive font size based on viewport width */
@@ -46,3 +66,21 @@
     
     font-family: 'Times New Roman', Times, serif;
   }
+
+  @media (max-width: 768px) {
+    .product img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        padding-right: 50px;
+      }
+      .product h2 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: -10px auto;
+        padding-right: 20px;
+      }
+}
+
