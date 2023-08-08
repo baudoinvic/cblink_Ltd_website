@@ -37,7 +37,6 @@ const Home = () => {
   }
   
 
-
   return (
     <div className='h-fit flex items-center justify-center flex-col'>
       
@@ -293,7 +292,6 @@ const Home = () => {
         
       </div>
 
-         
           {/* patner */}
           <div className='patner'>
           <div className='col-4'>

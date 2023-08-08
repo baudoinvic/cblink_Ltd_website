@@ -1,0 +1,48 @@
+.about-melo {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 20px;
+    padding-left: 5%;
+  }
+
+  .about-melo img {
+    max-width: 34%;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 8%;
+  }
+
+  .about-melo p {
+    flex: 1;
+    margin-top: -10%;
+    margin-left: 13px;
+   
+  }
+
+  /* melo service */
+.melo-service {
+    position: relative;
+    display: inline-block;
+    padding-left: 30%; 
+    margin-top: 22px;
+  }
+  
+  .melo-service img {
+    width: 80%;
+    max-width: 85%;
+    height: auto;
+  }
+  
+  .melo-service h2 {
+    position: absolute;
+     margin-top: 25px;
+    padding-left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 4vw; /* Responsive font size based on viewport width */
+    color: black;
+    font-weight: bold;
+    
+    font-family: 'Times New Roman', Times, serif;
+  }

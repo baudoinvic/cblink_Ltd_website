@@ -8,6 +8,7 @@ import DemoPage from './Pages/DemoPage'
 import DocsPage from './Pages/DocsPage'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
+import About from './Pages/About'
 
 const Pages = () => {
     return (
@@ -34,6 +35,7 @@ const Pages = () => {
                     <Route path='/register/docs' element={<DocsPage />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
                     <Route path='/demo/:demoID' element={<DemoPage />}></Route>
+                    <Route path='/About/' element={<About />}></Route>
                 </Routes>
             </BrowserRouter>
             <ToastContainer position="top-center" />

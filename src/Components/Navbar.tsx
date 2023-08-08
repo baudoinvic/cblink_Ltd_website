@@ -69,10 +69,34 @@ const Navbar = (props: any) => {
           </ul>
           <span className='smd:flex hidden mx-4'> | </span>
           <div className='smd:flex hidden item-center justify-center'>
-            <a href="https://" target={'_blank'}><BsTwitter className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
-            <a href="https://" target={'_blank'}><BsFacebook className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
+          <a style={{
+              display: 'inline-block',
+              padding: '10px 20px',
+              backgroundColor: '#007bff',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '5px',
+          }} href="/auth/signup">Get Melo</a>
+          
+
+          <a href="https://twitter.com/" target="_blank" style={{marginTop: '13px'}}>
+            <BsTwitter className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
+            </a>
+
+          <a href="https://instagram.com/" target="_blank" style={{marginTop: '13px'}}>
+          <BsInstagram className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
+          </a>
+
+     <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target="_blank" style={{marginTop: '13px'}}>
+     <BsLinkedin className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
+    </a>
+
+            {/* <a href="https://" target={'_blank'}><BsTwitter className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
+           
             <a href="https://" target={'_blank'}><BsInstagram className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
-            <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target={'_blank'}><BsLinkedin className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
+
+            <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target={'_blank'}><BsLinkedin className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a> */}
+
           </div>
         </div>
 
@@ -102,6 +126,7 @@ const Navbar = (props: any) => {
               </ul>
             </li>
             <li className=''><Link to={'/contact'} className='cursor-pointer'>REACH US</Link></li>
+           
           </ul>
         </div>
         <span onClick={() => { setSmallNavToggle(!smallNavToggle) }} className={`sm10:hidden flex menu-toggle cursor-pointer`}>{
