@@ -79,7 +79,7 @@ const Navbar = (props: any) => {
           }} href="/auth/signup">Get Melo</a>
           
 
-          <a href="https://twitter.com/" target="_blank" style={{marginTop: '13px'}}>
+          <a href="https://twitter.com/cb_Link_ltd/" target="_blank" style={{marginTop: '13px'}}>
             <BsTwitter className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
             </a>
 
