@@ -296,22 +296,22 @@ const Home = () => {
           <div className='patner'>
           <div className='col-4'>
           
-          <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/610126f2e74ecc2096710e91_partner-hero.svg"></img>
+          <img src="https://searchlogovector.com/wp-content/uploads/2018/09/health-mart-pharmacy-logo-vector.png"></img>
           </div>
 
           <div className='col-4'>
             
-             <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/62b96478f9856518a98d4455_Just_Appraised_LOGO.png"></img>
+             <img src="https://www.shutterstock.com/image-vector/shopping-logo-ecommerce-logotype-shooping-260nw-1978607771.jpg"></img>
           </div>
 
           <div className='col-4'>
       
-              <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/62b964785b2b123e07ddb170_andela.png"></img>
+              <img src="https://pbs.twimg.com/media/Ci5tJaMWEAAEDPi.jpg"></img>
           </div>
 
           <div className='col-4'>
       
-          <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/61011e1d480baf5f9acb0307_media-monks.svg"></img>
+          <img src="https://t4.ftcdn.net/jpg/03/31/93/85/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg"></img>
           </div>
         </div>
 
