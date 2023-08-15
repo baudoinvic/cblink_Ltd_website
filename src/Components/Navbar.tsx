@@ -87,7 +87,7 @@ const Navbar = (props: any) => {
           <BsInstagram className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
           </a>
 
-     <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target="_blank" style={{marginTop: '13px'}}>
+     <a href="https://www.linkedin.com/in/melo-software-497707244/" target="_blank" style={{marginTop: '13px'}}>
      <BsLinkedin className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
     </a>
 
