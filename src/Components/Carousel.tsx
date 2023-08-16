@@ -18,7 +18,7 @@ const Carousel = () => {
     </p>
 
     <a href="About" className="discover-link">
-      Discover More <span className="arrow">→</span> 
+      Discover more <span className="arrow">→</span> 
     </a>
   </div>
   );
