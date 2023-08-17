@@ -9,6 +9,9 @@ import DocsPage from './Pages/DocsPage'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
 import About from './Pages/About'
+import Web from './Pages/Web'
+import Mobile from './Pages/Mobile'
+import Support from './Pages/Support'
 
 const Pages = () => {
     return (
@@ -36,6 +39,9 @@ const Pages = () => {
                     <Route path='/contact' element={<Contact />}></Route>
                     <Route path='/demo/:demoID' element={<DemoPage />}></Route>
                     <Route path='/About/' element={<About />}></Route>
+                    <Route path= '/web/' element={<Web />}></Route>
+                    <Route path='/mobile/' element={<Mobile />}></Route>
+                    <Route path='/support' element={<Support />}></Route>
                 </Routes>
             </BrowserRouter>
             <ToastContainer position="top-center" />

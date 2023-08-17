@@ -121,10 +121,8 @@ const About = () => {
     <h4><b>Software|Hardware Maintenance</b></h4>
      <p>Optimizing software performance and resource management. also Data backup and disaster recovery planning</p>
     </div>
-  </div>
-    
+    </div>
 
-     
        <Footer />
 
     </div>

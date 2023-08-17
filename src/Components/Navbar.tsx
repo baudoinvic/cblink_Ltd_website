@@ -18,6 +18,22 @@ const Navbar = (props: any) => {
     const innerListMobile2 = document.querySelector('.inner-list-mobile-2')
     innerListMobile2?.classList.contains('hidden') ? innerListMobile2?.classList.replace('hidden', 'flex') : innerListMobile2?.classList.replace('flex', 'hidden')
   }
+  const webLinkMobile = () => {
+    const innerListMobile2 = document.querySelector('.inner-list-mobile-2')
+    innerListMobile2?.classList.contains('hidden') ? innerListMobile2?.classList.replace('hidden', 'flex') : innerListMobile2?.classList.replace('flex', 'hidden')
+  }
+  
+  const mobileLinkMobile = () => {
+    const innerListMobile2 = document.querySelector('.inner-list-mobile-2')
+    innerListMobile2?.classList.contains('hidden') ? innerListMobile2?.classList.replace('hidden', 'flex') : innerListMobile2?.classList.replace('flex', 'hidden')
+  }
+
+  
+  const supportLinkMobile = () => {
+    const innerListMobile2 = document.querySelector('.inner-list-mobile-2')
+    innerListMobile2?.classList.contains('hidden') ? innerListMobile2?.classList.replace('hidden', 'flex') : innerListMobile2?.classList.replace('flex', 'hidden')
+  }
+
 
   return (
     <div className='bg-white z-[20] px-4 w-full top-0 py-4 shadow-lg sticky left-0 flex flex-row items-center justify-around'>
@@ -58,9 +74,9 @@ const Navbar = (props: any) => {
               <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute top-6'>
               {/* <li className='w-3/4 my-2 '><a href={'#cb-Services'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Services</a></li> */}
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/Web'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/Mobile'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/Support'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
                 
               </ul>
@@ -119,12 +135,66 @@ const Navbar = (props: any) => {
               <Link onClick={servicesLinkMobile} to={'/'} className={`services-link-mobile font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
               <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list-mobile-2 hidden list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute -right-6 top-6'>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
-                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
+                 <li className='w-3/4 my-2 '><Link to={'/web'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li> 
+
+                <li className='w-3/4 my-2 '><Link to={'/mobile'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/support'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
                 <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
               </ul>
             </li>
+
+
+            <li className='link-holder my-2 relative flex flex-col'>
+              <Link onClick={webLinkMobile} to={'/'} className={`services-link-mobile font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
+              <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list-mobile-2 hidden list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute -right-6 top-6'>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
+                 <li className='w-3/4 my-2 '><Link to={'/web'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li> 
+
+                <li className='w-3/4 my-2 '><Link to={'/Mobile'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/support'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
+              </ul>
+            </li>
+
+
+            <li className='link-holder my-2 relative flex flex-col'>
+              <Link onClick={mobileLinkMobile} to={'/'} className={`services-link-mobile font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
+              <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list-mobile-2 hidden list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute -right-6 top-6'>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
+                 <li className='w-3/4 my-2 '><Link to={'/web'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li> 
+
+                <li className='w-3/4 my-2 '><Link to={'/Mobile'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/support'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
+              </ul>
+            </li>
+
+            <li className='link-holder my-2 relative flex flex-col'>
+              <Link onClick={supportLinkMobile} to={'/'} className={`services-link-mobile font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' >SERVICES <BsChevronDown className='chevron2 ml-2 hover:rotate-180' /></span></Link>
+              <ul className='py-2 shadow-lg  bg-white  shadow-slate-800 inner-list-mobile-2 hidden list-none rounded-b-md w-72 border-t-2 flex-col justify-start items-center border-t-cblink  absolute -right-6 top-6'>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Software Development</Link></li>
+                 <li className='w-3/4 my-2 '><Link to={'/web'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Development</Link></li> 
+
+                <li className='w-3/4 my-2 '><Link to={'/Mobile'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Mobile Apps Development</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/support'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>IT Consulatance</Link></li>
+                <li className='w-3/4 my-2 '><Link to={'/services'} className={`font-base ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Web Hosting</Link></li>
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <li className=''><Link to={'/contact'} className='cursor-pointer'>REACH US</Link></li>
            
           </ul>
