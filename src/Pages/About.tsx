@@ -49,6 +49,28 @@ const About = () => {
         a strong focus on technology-driven advancements We primarily focused on management 
         softwares in order to equip businesses with strong management tools".</p>
      </div>
+
+     <div className='product'>
+      <img
+        src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
+        alt='Background Image'
+        />
+         <h2 style={{
+          fontFamily: 'verdana',
+          fontSize: '18px',
+          
+       }}>Our products</h2>
+      </div>
+
+     <div className='w-full mt-8 flex flex-col' >
+          {
+            products.map((product) => {
+              return <Product key={Math.random()} product={product} />
+            })
+          }
+        </div>
+
+
       <div className='product'>
       <img
         src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
@@ -101,26 +123,8 @@ const About = () => {
     </div>
   </div>
     
-  <div className='product'>
-      <img
-        src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
-        alt='Background Image'
-        />
-         <h2 style={{
-          fontFamily: 'verdana',
-          fontSize: '18px',
-          
-       }}>Our products</h2>
-      </div>
+
      
-      <div className='w-full mt-8 flex flex-col' >
-          {
-            products.map((product) => {
-              return <Product key={Math.random()} product={product} />
-            })
-          }
-        </div>
-       
        <Footer />
 
     </div>

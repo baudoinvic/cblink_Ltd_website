@@ -54,14 +54,27 @@ const Product: React.FC<Props> = ({ product }) => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='w-1/2 h-full bg-cblink flex flex-col items-center justify-center p-4 rounded'>
+                        {/* <div className='w-1/2 h-full bg-cblink flex flex-col items-center justify-center p-4 rounded'>
                             <video
                                 poster='https://res.cloudinary.com/precieux/image/upload/v1672045949/inventory-28582804_g2kbmq.jpg'
                                 src='videos/inventory.mp4'
                                 controls
                                 className='rounded w-full object-cover'
                             ></video>
-                        </div>
+                        </div> */}
+
+
+         <div className='w-1/2 h-full bg-cblink flex flex-col items-center justify-center p-4 rounded'>
+           <img
+           src='https://res.cloudinary.com/precieux/image/upload/v1672045949/inventory-28582804_g2kbmq.jpg'
+            alt='Inventory'
+           className='rounded w-full object-cover'
+         />
+     </div>
+
+
+
+
                     </div>
                 </AccordionDetails>
             </Accordion>

@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react'
 import { BiSkipNext } from 'react-icons/bi'
-import meloLogo from './../../assets/melo-logo.png'
+// import meloLogo from './../../assets/melo-logo.png'
+import easy from './../../assets/easy.jpeg'
 import { IoMdCloudUpload } from 'react-icons/io'
 import { MdDoneAll, MdOutlineCancel } from 'react-icons/md'
 import { useAdmin } from '../../Context/AdminContext'
@@ -91,7 +92,7 @@ const Signup = () => {
           <Navbar />
             <form className='w-full h-full flex items-center justify-center' onSubmit={handleSubmit}>
                 <div className='smm20: sm:w-6/12 md:w-5/12 xl:w-4/12 h-fit relative rounded-xl bg-white flex flex-col items-center justify-center'>
-                    <img src={meloLogo} className='w-24 h-24 mt-8' alt="" />
+                    <img src={easy} className='w-24 h-24 mt-8' alt="" />
                     <h2 className='text-black text-3xl font-poppins font-semibold my-8'>Signup</h2>
 
                     {

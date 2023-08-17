@@ -2,6 +2,9 @@ import React from 'react'
 import { BiChevronRight } from 'react-icons/bi'
 import emailjs from '@emailjs/browser';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import  { useState } from 'react';
+
+
 
 const Footer = () => {
     const sendEmail = (e: any) => {
@@ -16,6 +19,14 @@ const Footer = () => {
             });
         e.target.reset()
     };
+
+
+    const [subscribed, setSubscribed] = useState(false);
+
+    const handleSubscribe = () => {
+        // Update the state to indicate subscription
+        setSubscribed(true);
+    }
 
     return (
         <div className=' w-full text-white  bg-[#1c2834] pt-16 pb-8 px-16 md:grid md:grid-cols-2 xl:flex items-start justify-center'>
@@ -119,18 +130,45 @@ const Footer = () => {
                     fontFamily: 'Times new roman sans serif'}}>_Provide your email here and subscribe to see latest news from us</span>
                 <form onSubmit={sendEmail}>
 
-                    <div className='flex items-center justify-center my-3'>
-                        <input type="email" name='email' className='text-sm     sm:text-[18px] text-black px-2 outline-0 border-0 rounded-l-md w-32 mmsm:w-48 msm:w-64 sm:w-72 h-12' />
-                        <button type='submit' className=' rounded-r-md bg-cblink text-white px-2 text-base sm:text-lg md:text-xl h-12'
-                        
+
+          
+<div className='flex items-center justify-center my-3'>
+            {!subscribed ? (
+                <>
+                    <input
+                        type="email"
+                        name="email"
+                        className='text-sm sm:text-[18px] text-black px-2 outline-0 border-0 rounded-l-md w-32 mmsm:w-48 msm:w-64 sm:w-72 h-12'
+                    />
+                    <button
+                        type='button'
+                        className='rounded-r-md bg-cblink text-white px-2 text-base sm:text-lg md:text-xl h-12'
                         style={{
-                            
                             backgroundColor: '#007bff',
                             color: '#d9d9d9'
-                        
-            
-                        }}>Subscribe</button>
-                    </div>
+                        }}
+                        onClick={handleSubscribe}
+                    >
+                        Subscribe
+                    </button>
+                </>
+            ) : (
+                <div>
+                    Thank you for subscribing!
+                </div>
+            )}
+        </div>
+
+
+
+
+
+
+
+
+
+
+
                 </form>
             </div>
         </div>

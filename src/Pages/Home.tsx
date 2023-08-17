@@ -103,6 +103,127 @@ const Home = () => {
 
         </div>
         <br></br><br></br>
+ 
+
+        {/*our products and melo products*/}
+
+        <div id='meloproducts' className='w-full px-4 sm10:px-16 py-8 flex flex-col items-center justify-start  bg-[#f5f5f5]'>
+      <div className='team-container' style={{margin: '2.5rem'}}>
+        <img
+       src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg" alt="Background Image"
+      />
+      
+  <h2 style={{
+   
+    fontFamily: 'Times new roman sans serif'
+    
+    }}> MELO™ PRODUCTS<span className="arrow">→</span></h2>
+  </div>
+     <div className="melo">
+        <p>our feature of using melo is to simplified B2B business to business we usually focus 
+         on expense sales and billing management also we do our prduct on stock management and 
+         accounting report with the public relations in our country.so why using melo? is because
+         is easy and faster navigation also for customers relation services and quicky support. 
+        then melo software offers a user friendly interface that simplifie the process of managing
+        your pharmacy. you can easily track your stock levels, set up automatic orders to replenish
+        low stock and generate sales reports to keep an eye in your business performance.
+
+        </p>
+     </div>
+        <div className='w-full mt-8 flex flex-col' >
+          {
+            products.map((product) => {
+              return <Product key={Math.random()} product={product} />
+            })
+          }
+        </div>
+      </div>
+
+
+       {/* what we are doing*/}
+
+       <div className='w-full px-2 sm10:px-8 py-8 flex flex-col items-center justify-start  bg-white'>
+      <div className='melo-service'>
+      <img
+      src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
+        alt='Background Image'
+        />
+        <h2 style={{
+        
+          fontSize: '18px',
+          fontFamily: 'verdana',
+
+          }}>What we do<span className="arrow">→</span></h2>
+            <div className="super" style={{color: "#495d69",  margin: '3rem'}}>
+       <span>we are good for designing implementing and developing websites and mobile apps<br></br> for companies even for customers</span>
+       <span>we are here to help you with your next project just<br></br> feel free to keep with us in touch we will be always there for you</span>  
+       </div>     
+      </div> 
+        
+      </div>
+
+
+     
+      <div className='section' >
+          <div className='col-4'>
+          
+             <h2 style={{opacity: '0.5'}}>01</h2>
+               <h2>Web Development</h2>
+              <p><i className="fas fa-quote-left"
+                style={{
+
+                 opacity: '0.5',
+                fontSize:'30px'
+
+                }}></i>We usually design and makes implmentantion for web application for companies and for customers need .
+                <i className="fas fa-quote-right" style={{
+                    opacity: '0.5',
+                    fontSize:'30px'
+                }}></i></p>
+          </div>
+
+          <div className='col-4'>
+             <h2 style={{opacity: '0.5'}}>02</h2>
+             <h2>Mobile Development</h2>
+              <p><i className="fas fa-quote-left"
+               style={{
+                opacity: '0.5',
+                fontSize:'30px'
+                
+                }}>
+                
+                </i>We are proudly to offer our clients fully customisable mobile apps that cater to their unique needs and preferences.
+               <i className="fas fa-quote-right" 
+               style={{
+                opacity: '0.5',
+                fontSize:'30px'
+               }}>
+                
+                </i></p>
+          </div>
+
+          <div className='col-4'>
+             <h2 style={{opacity: '0.5'}}>03</h2>
+             <h2>UI/UX Design</h2>
+              <p><i className="fas fa-quote-left" 
+              style={{
+                opacity: '0.5',
+                fontSize: '30px'
+                
+                
+                }}></i>
+                   Better Designs that adapt seamlessly across devices and cater to diverse user needs for our clients.
+               <i className="fas fa-quote-right" 
+                  style={{
+                    opacity: '0.5',
+                    fontSize: '30px'
+                  }}></i>
+                  </p>
+             </div>
+             </div>
+
+          <br></br> 
+          <br></br>
 
       {/* Team */}
       <div id='meloteam' className='team'>
@@ -128,85 +249,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-      
-      <div className='w-full px-2 sm10:px-8 py-8 flex flex-col items-center justify-start  bg-white'>
-      <div className='melo-service'>
-      <img
-      src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
-        alt='Background Image'
-        />
-        <h2 style={{
-        
-          fontSize: '18px',
-          fontFamily: 'verdana',
 
-          }}>What we do<span className="arrow">→</span></h2>
-            <div className="super" style={{color: "#495d69",  margin: '3rem'}}>
-       <span>we are good for designing implementing and developing websites and mobile apps<br></br> for companies even for customers</span>
-       <span>we are here to help you with your next project just<br></br> feel free to keep with us in touch we will be always there for you</span>  
-       </div>     
-      </div> 
-        
-      </div>
-
-
-      <div className='section' >
-          <div className='col-4'>
-          
-             <h2 style={{opacity: '0.5'}}>01</h2>
-               <h2>Web Development</h2>
-              <p><i className="fas fa-quote-left"
-                style={{
-
-                 opacity: '0.5',
-                fontSize:'30px'
-
-                }}></i>Discipline, Honesty, Innovation, Empowerment, Social Responsibility, Customer Focus,Accountability And Simplicity.
-                <i className="fas fa-quote-right" style={{
-                    opacity: '0.5',
-                    fontSize:'30px'
-                }}></i></p>
-          </div>
-
-          <div className='col-4'>
-             <h2 style={{opacity: '0.5'}}>02</h2>
-             <h2>Mobile Development</h2>
-              <p><i className="fas fa-quote-left"
-               style={{
-                opacity: '0.5',
-                fontSize:'30px'
-                
-                }}>
-                
-                </i>Our mission is to spark managements with technology mostly in software development field and IT support.
-               <i className="fas fa-quote-right" 
-               style={{
-                opacity: '0.5',
-                fontSize:'30px'
-               }}>
-                
-                </i></p>
-          </div>
-
-          <div className='col-4'>
-             <h2 style={{opacity: '0.5'}}>03</h2>
-             <h2>UI/UX Design</h2>
-              <p><i className="fas fa-quote-left" 
-              style={{
-                opacity: '0.5',
-                fontSize: '30px'
-                
-                
-                }}></i>
-               Our vision is to equip millions of businesses around the world with the best business management tools.
-               <i className="fas fa-quote-right" 
-                  style={{
-                    opacity: '0.5',
-                    fontSize: '30px'
-                  }}></i>
-                  </p>
-             </div>
-             </div>
              <br>
            </br>
            <br>
@@ -316,35 +359,7 @@ const Home = () => {
         </div>
 
        <br></br> <br></br>
-      <div id='meloproducts' className='w-full px-4 sm10:px-16 py-8 flex flex-col items-center justify-start  bg-[#f5f5f5]'>
-      <div className='team-container' style={{margin: '2.5rem'}}>
-        <img
-       src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg" alt="Background Image"
-      />
-      
-  <h2 style={{
-   
-    fontFamily: 'Times new roman sans serif'
-    
-    }}> MELO™ PRODUCTS<span className="arrow">→</span></h2>
-  </div>
-     <div className="melo">
-        <p>today in our daily schedules. It can be daunting and difficult to handle, whether you have been
-           having trouble working from home or having to abide by new laws at work. How can we handle this 
-           to enhance our general well-being and pleasure since it can lead to additional tension and worry
-            that the majority of us could do without. Many of us arrive at work and spend the entire eight 
-            hours in “work mode.” While it could seem like the most effective technique to complete the task, 
-            it may actually be ineffective. Throughout the day, stress and anxiety can accumulate, which can lead
-             to brain fog, attention problems, and inefficiency.here down you can see some features of it</p>
-     </div>
-        <div className='w-full mt-8 flex flex-col' >
-          {
-            products.map((product) => {
-              return <Product key={Math.random()} product={product} />
-            })
-          }
-        </div>
-      </div>
+     
     
       {/* <div id='melogallery' className='w-full px-4 sm10:px-16 py-8 flex flex-col items-center justify-start  bg-[#f5f5f5]'> */}
 
