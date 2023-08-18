@@ -12,6 +12,7 @@ import About from './Pages/About'
 import Web from './Pages/Web'
 import Mobile from './Pages/Mobile'
 import Support from './Pages/Support'
+import Hosting from './Pages/Hosting'
 
 const Pages = () => {
     return (
@@ -42,6 +43,7 @@ const Pages = () => {
                     <Route path= '/web/' element={<Web />}></Route>
                     <Route path='/mobile/' element={<Mobile />}></Route>
                     <Route path='/support' element={<Support />}></Route>
+                    <Route path='/hosting' element={<Hosting />}></Route>
                 </Routes>
             </BrowserRouter>
             <ToastContainer position="top-center" />

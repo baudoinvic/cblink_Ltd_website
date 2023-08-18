@@ -123,8 +123,24 @@ const Home = () => {
         <p>our feature of using melo is to simplified B2B business to business we usually focus 
          on expense sales and billing management also we do our prduct on stock management and 
          accounting report with the public relations in our country.so why using melo? is because
-         is easy and faster navigation also for customers relation services and quicky support. 
-        then melo software offers a user friendly interface that simplifie the process of managing
+         is easy and faster navigation also for customers relation services and quicky support.
+  
+        
+         <div className='team-container' style={{margin: '2.5rem'}}>
+        <img
+       src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg" alt="Background Image"
+      />
+      
+  <h2 style={{
+   
+    fontFamily: 'Times new roman sans serif'
+    
+    }}> MELO™ SOFTWARE<span className="arrow">→</span></h2>
+  </div>
+       Melo Software is a business application system developed and owned by CB-Link Ltd to enhance
+        Business Management Procedures (sales, billing, inventory, accounting and reporting) 
+        for SMEs businesses or centers.
+        melo software offers a user friendly interface that simplifie the process of managing
         your pharmacy. you can easily track your stock levels, set up automatic orders to replenish
         low stock and generate sales reports to keep an eye in your business performance.
 
