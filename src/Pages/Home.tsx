@@ -7,7 +7,7 @@ import { FaBullseye, FaHeart, FaRocket } from 'react-icons/fa';
 import Navbar from '../Components/Navbar'
 import { BsCheck2All } from 'react-icons/bs'
 import ProfileCard from '../Components/ProfileCard'
-import teamData from '../utils/teamdata'
+// import teamData from '../utils/teamdata'
 // import skills from '../utils/skills'
 // import Skill from '../Components/Skill'
 // import Partner from '../Components/Partner'
@@ -158,8 +158,9 @@ const Home = () => {
 
        {/* what we are doing*/}
 
+       <div id="what we do">
        <div className='w-full px-2 sm10:px-8 py-8 flex flex-col items-center justify-start  bg-white'>
-      <div className='melo-service'>
+        <div className='melo-service'>
       <img
       src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
         alt='Background Image'
@@ -177,7 +178,7 @@ const Home = () => {
       </div> 
         
       </div>
-
+      </div>
 
      
       <div className='section' >
@@ -241,8 +242,7 @@ const Home = () => {
           <br></br> 
           <br></br>
 
-      {/* Team */}
-      <div id='meloteam' className='team'>
+      {/* <div id='meloteam' className='team'>
       <div className='team-container'>
       <img
     src='https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg'
@@ -264,7 +264,7 @@ const Home = () => {
           }
         </div>
         </div>
-      </div>
+      </div> */}
 
              <br>
            </br>

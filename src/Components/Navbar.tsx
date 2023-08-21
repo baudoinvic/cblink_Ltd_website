@@ -70,7 +70,7 @@ const Navbar = (props: any) => {
               <Link to={'/'} className={`about-link font-medium ${props.active === 'home' ? 'text-cblink' : 'text-black hover:text-cblink'}`}><span className='flex items-center justify-center' style={{color: '#495d69'}}>ABOUT <BsChevronDown className='chevron1 ml-2 hover:rotate-180' /></span></Link>
               <ul className='z-10 py-2 shadow-lg shadow-slate-800 inner-list list-none rounded-b-md w-56 border-t-2 flex-col bg-white justify-start items-center border-t-cblink  absolute top-6'>
                 <li className='w-3/4 my-2 '><a href={'#aboutus'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>About Us</a></li>
-                <li className='w-3/4 my-2 '><a href={'#meloteam'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Team</a></li>
+                <li className='w-3/4 my-2 '><a href={'#what we do'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>What we do</a></li>
                 <li className='w-3/4 my-2 '><a href={'#meloproducts'} className={`font-medium  ${props.active === 'about' ? 'text-cblink' : 'text-black hover:text-cblink'}`}>Products</a></li>
               </ul>
             </li>
@@ -112,11 +112,7 @@ const Navbar = (props: any) => {
      <BsLinkedin className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
     </a>
 
-            {/* <a href="https://" target={'_blank'}><BsTwitter className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
-           
-            <a href="https://" target={'_blank'}><BsInstagram className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a>
-
-            <a href="https://www.linkedin.com/in/santus-habumugisha-517049191/" target={'_blank'}><BsLinkedin className='mx-2 text-slate-500 duration-75 hover:text-cblink' /></a> */}
+          
 
           </div>
         </div>
