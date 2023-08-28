@@ -83,11 +83,10 @@ const Signup = () => {
         (prop: keyof Values) => (event: React.ChangeEvent<HTMLInputElement>) => {
             setFormData({ ...formData, [prop]: event.target.value });
         };
+        
 
     return (
 
-
-       
         <div className='Signup'>
           <Navbar />
             <form className='w-full h-full flex items-center justify-center' onSubmit={handleSubmit}>

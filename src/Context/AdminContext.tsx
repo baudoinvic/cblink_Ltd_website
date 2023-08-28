@@ -9,7 +9,6 @@ export const useAdmin = () => {
 
 export const AdminProvider = ({ children }: any) => {
 
-
     const newCompany = async (formData: Values) => {
         try {
 
@@ -31,7 +30,7 @@ export const AdminProvider = ({ children }: any) => {
             return { status: false, message: "Error registering company!!!" }
         }
     }
-
+    
     const uploadFiles = async (files: uploadedFile[]) => {
         try {
             console.log(localStorage.getItem("companyId"));
@@ -58,5 +57,6 @@ export const AdminProvider = ({ children }: any) => {
         <AdminContext.Provider value={{ uploadFiles, newCompany }}>
             {children}
         </AdminContext.Provider>
+
     );
 };

@@ -97,8 +97,15 @@ const Navbar = (props: any) => {
               color: 'white',
               textDecoration: 'none',
               borderRadius: '5px',
+              marginLeft: '10px',
+              marginRight: '10px',
+        
           }} href="/auth/signup">Get Melo</a>
           
+          
+           
+          <div className='smd:flex hidden item-center justify-center'>
+        
 
           <a href="https://twitter.com/cb_Link_ltd/" target="_blank" style={{marginTop: '13px'}}>
             <BsTwitter className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
@@ -112,8 +119,7 @@ const Navbar = (props: any) => {
      <BsLinkedin className="mx-2 text-slate-500 duration-75 hover:text-cblink" />
     </a>
 
-          
-
+           </div>
           </div>
         </div>
 
