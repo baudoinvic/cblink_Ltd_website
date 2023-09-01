@@ -1,5 +1,6 @@
 {
   "name": "cblink",
+  "homepage":"https://cblink.rw/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
